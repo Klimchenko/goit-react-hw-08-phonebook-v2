@@ -1,11 +1,13 @@
-import { Oval } from 'react-loader-spinner';
-export const Loader = () => {
-    return (
-        <Oval
-            height="40"
-            color='white'
-        />
-    )
+import React from 'react';
+import { Hearts } from 'react-loader-spinner';
+import { Container } from './Loader.styled';
+
+const Loader = () => {
+  return (
+    <Container>
+      <Hearts color="#b43bc4" height={150} width={150} />
+    </Container>
+  );
 };
 
-   
+export default Loader;
